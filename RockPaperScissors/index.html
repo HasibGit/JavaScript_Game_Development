@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+
+  </head>
+  <body>
+
+    <div class="container" id="heading">
+       <h1>Rock Paper And Scissors</h1>
+    </div>
+
+
+    <div class="container" id="choiceBox">
+      <div class="row">
+
+         <div class="col-md-4">
+           <!-- rock image -->
+           <img id = "rock" src="images/rock.png" alt="" onclick = "humanChoice(this)">
+         </div>
+
+         <div class="col-md-4">
+           <!-- paper image -->
+           <img id = "paper" src="images/paper.png" alt="" onclick = "humanChoice(this)">
+         </div>
+
+         <div class="col-md-4">
+           <!-- scissors image -->
+           <img id = "scissors" src="images/scissors.png" alt="" onclick = "humanChoice(this)">
+         </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="container" id = "resultBox">
+      <div class="row">
+
+      </div>
+    </div>
+
+    <div class="container" id = "reset">
+      <button type="submit" name="reset" class = "btn btn-primary btn-lg btn-block" id = "resetButton" onClick="window.location.reload();">Reset</button>
+    </div>
+
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

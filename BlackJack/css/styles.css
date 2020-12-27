@@ -1,0 +1,53 @@
+.container{
+  border: 3px solid black;
+  width : 75%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ffa36c;
+}
+
+.table{
+  background-color: white;
+}
+
+.flexbox-row-2, .flexbox-row-3, .flexbox-row-4 {
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flexbox-row-4{
+  margin-bottom: 15px;
+}
+
+
+.flexbox-row-2{
+  background-color: #438a5e;
+  color: white;
+  -moz-box-shadow: inset 0px 0px 50px 5px black;
+  -webkit-box-shadow: inset 0px 0px 50px 5px black;
+   box-shadow: inset 0px 0px 50px 5px black;
+}
+
+.flexbox-row-3{
+  background-color: #438a5e;
+  color: white;
+  -moz-box-shadow: inset 0px 0px 15px 5px black;
+  -webkit-box-shadow: inset 0px 0px 15px 5px black;
+   box-shadow: inset 0px 0px 15px 5px black;
+}
+
+.flexbox-row-2 div{
+  border: 1px solid black;
+  flex : 1;
+  padding : 10px;
+  height: 400px;
+  text-align: center;
+
+}
+
+img{
+  padding: 10px;
+}

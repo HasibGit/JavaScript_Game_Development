@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>BlackJack</title>
+  <!-- bootstrap cdn -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>BlackJack Game</h1>
+
+    <button type="button" style="float : right;" class="btn btn-success" data-toggle="modal" data-target="#exampleModalLong">
+        Rules
+      </button>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Rules</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" style="text-align : left;">
+              <ul>
+                <li>There are in total 13 types cards.</li>
+                <li>Cards from 2 to 10 represent values from 2 to 10.</li>
+                <li>Cards Jack, Queen, King represent value 10.</li>
+                <li>The Ace card can represent 2 values, 1 and 11.</li>
+                <li>First you will make your moves, then the bot will make his moves.</li>
+                <li>Each player will have to make atleast one move</li>
+                <li>In each move cards are picked at random and score is added to the players score according to the card value.</li>
+                <li>Whoever has greater score wins. But if a players score crosses 21, then he is busted and if the other player is not busted
+                , the other player will win.</li>
+                <li>If both player has the same score or both players are busted, it's a draw.</li>
+                <li>If a player gets ACE card, 11 point's will be added to players score if the players score doesn't exceed 21 by adding 11 points. Else, only 1 point will be added to the players score.</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div class="flexbox-row-1">
+      <h3 style="margin-left : 50px;"><span id="situation-span">Let's Play</span></h3>
+    </div>
+
+    <div class="flexbox-row-2">
+      <div id="yourBox">
+        <h2>You : <span id="yourScore">0</span></h2>
+      </div>
+      <div id="dealerBox">
+        <h2>Dealer : <span id="dealerScore">0</span></h2>
+      </div>
+    </div>
+
+    <div class="flexbox-row-3">
+      <div class="buttons">
+        <button type="button" name="button" class="btn btn-primary btn-lg mr-2" id="hit-button">Hit</button>
+        <button type="button" name="button" class="btn btn-warning btn-lg mr-2" id="stand-button">Stand</button>
+        <button type="button" name="button" class="btn btn-danger btn-lg" id="deal-button">Deal</button>
+      </div>
+    </div>
+
+    <div class="flexbox-row-4">
+      <table class="table table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Draws</th>
+          </tr>
+        </thead>
+
+        <tbody class="tbody-light">
+          <tr>
+            <td><span id="wins">0</span></td>
+            <td><span id="losses">0</span></td>
+            <td><span id="draws">0</span></td>
+          </tr>
+        </tbody>
+
+
+
+      </table>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script src="javascript/script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
