@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Connect Four</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 style="text-align : center;">Connect Four</h1>
+
+    <div class="info">
+      <div class="p1">
+        <h3 style = "margin-right : 100px;">Player 1</h3>
+        <div class="slot player1">
+
+        </div>
+      </div>
+      <div class="p2">
+        <h3>Player 2</h3>
+        <div class="slot player2">
+
+        </div>
+      </div>
+
+      <div class="turn">
+        <h3 class="player-turn">Turn : Player 1</h1>
+      </div>
+
+    </div>
+
+
+
+    <div class="grid">
+      <div class="slot" id="00">
+
+      </div>
+      <div class="slot" id="01">
+
+      </div>
+      <div class="slot" id="02">
+
+      </div>
+      <div class="slot" id="03">
+
+      </div>
+      <div class="slot" id="04">
+
+      </div>
+      <div class="slot" id="05">
+
+      </div>
+      <div class="slot" id="06">
+
+      </div>
+      <div class="slot" id="07">
+
+      </div>
+      <div class="slot" id="08">
+
+      </div>
+
+
+      <div class="slot" id="10">
+
+      </div>
+      <div class="slot" id="11">
+
+      </div>
+      <div class="slot" id="12">
+
+      </div>
+      <div class="slot" id="13">
+
+      </div>
+      <div class="slot" id="14">
+
+      </div>
+      <div class="slot" id="15">
+
+      </div>
+      <div class="slot" id="16">
+
+      </div>
+      <div class="slot" id="17">
+
+      </div>
+      <div class="slot" id="18">
+
+      </div>
+
+
+      <div class="slot" id="20">
+
+      </div>
+      <div class="slot" id="21">
+
+      </div>
+      <div class="slot" id="22">
+
+      </div>
+      <div class="slot" id="23">
+
+      </div>
+      <div class="slot" id="24">
+
+      </div>
+      <div class="slot" id="25">
+
+      </div>
+      <div class="slot" id="26">
+
+      </div>
+      <div class="slot" id="27">
+
+      </div>
+      <div class="slot" id="28">
+
+      </div>
+
+
+      <div class="slot" id="30">
+
+      </div>
+      <div class="slot" id="31">
+
+      </div>
+      <div class="slot" id="32">
+
+      </div>
+      <div class="slot" id="33">
+
+      </div>
+      <div class="slot" id="34">
+
+      </div>
+      <div class="slot" id="35">
+
+      </div>
+      <div class="slot" id="36">
+
+      </div>
+      <div class="slot" id="37">
+
+      </div>
+      <div class="slot" id="38">
+
+      </div>
+
+      <div class="slot" id="40">
+
+      </div>
+      <div class="slot" id="41">
+
+      </div>
+      <div class="slot" id="42">
+
+      </div>
+      <div class="slot" id="43">
+
+      </div>
+      <div class="slot" id="44">
+
+      </div>
+      <div class="slot" id="45">
+
+      </div>
+      <div class="slot" id="46">
+
+      </div>
+      <div class="slot" id="47">
+
+      </div>
+      <div class="slot" id="48">
+
+      </div>
+
+
+      <div class="slot" id="50">
+
+      </div>
+      <div class="slot" id="51">
+
+      </div>
+      <div class="slot" id="52">
+
+      </div>
+      <div class="slot" id="53">
+
+      </div>
+      <div class="slot" id="54">
+
+      </div>
+      <div class="slot" id="55">
+
+      </div>
+      <div class="slot" id="56">
+
+      </div>
+      <div class="slot" id="57">
+
+      </div>
+      <div class="slot" id="58">
+
+      </div>
+
+
+      <div class="slot" id="60">
+
+      </div>
+      <div class="slot" id="61">
+
+      </div>
+      <div class="slot" id="62">
+
+      </div>
+      <div class="slot" id="63">
+
+      </div>
+      <div class="slot" id="64">
+
+      </div>
+      <div class="slot" id="65">
+
+      </div>
+      <div class="slot" id="66">
+
+      </div>
+      <div class="slot" id="67">
+
+      </div>
+      <div class="slot" id="68">
+
+      </div>
+
+      <div class="slot" id="70">
+
+      </div>
+      <div class="slot" id="71">
+
+      </div>
+      <div class="slot" id="72">
+
+      </div>
+      <div class="slot" id="73">
+
+      </div>
+      <div class="slot" id="74">
+
+      </div>
+      <div class="slot" id="75">
+
+      </div>
+      <div class="slot" id="76">
+
+      </div>
+      <div class="slot" id="77">
+
+      </div>
+      <div class="slot" id="78">
+
+      </div>
+
+      <div class="slot" id="80">
+
+      </div>
+      <div class="slot" id="81">
+
+      </div>
+      <div class="slot" id="82">
+
+      </div>
+      <div class="slot" id="83">
+
+      </div>
+      <div class="slot" id="84">
+
+      </div>
+      <div class="slot" id="85">
+
+      </div>
+      <div class="slot" id="86">
+
+      </div>
+      <div class="slot" id="87">
+
+      </div>
+      <div class="slot" id="88">
+
+
+
+
+      </div>
+    </div>
+
+
+    <script src="script.js" charset="utf-8"></script>
+
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
